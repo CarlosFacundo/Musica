@@ -1,0 +1,231 @@
+/* hip hop */
+img {
+  height: 200px;
+  width: 100%;
+}
+
+/* main */
+/* pop */
+* {
+  margin: 0%;
+  padding: 0%;
+}
+
+html {
+  font-size: 62.5%;
+  background-color: black;
+}
+
+/* main */
+.item1 p {
+  color: goldenrod;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.item2 img {
+  width: 300px;
+  height: 200px;
+}
+
+.item3 p {
+  margin-top: 20px;
+  color: goldenrod;
+}
+.item3 img {
+  height: 200px;
+  width: 200px;
+}
+
+* {
+  padding: 0%;
+  margin: 0%;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+/* rock */
+.conteinergrid {
+  display: flex;
+  flex-direction: column;
+}
+.conteinergrid .item1 img {
+  height: 150px;
+  width: 150px;
+}
+.conteinergrid .item2 p {
+  color: orangered;
+}
+.conteinergrid .item3 img {
+  height: 100px;
+  width: 100px;
+}
+
+@media (min-width: 800px) {
+  .conteinergrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: "item1 item2 item2" "item1 item3 item3" "item1 item3 item3";
+  }
+  .item1 {
+    grid-area: item1;
+  }
+  .item2 {
+    grid-area: item2;
+  }
+  .item3 {
+    grid-area: item3;
+    height: 100%;
+  }
+  .p-item2 {
+    margin-left: 40px;
+    font-size: 1.5rem;
+    color: black;
+  }
+  .img-item3 {
+    height: 30px;
+    margin-left: 100px;
+  }
+}
+/* mensaje */
+* {
+  margin: 0%;
+  padding-left: 0%;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+/* main */
+.animacion {
+  color: blue;
+  text-align: center;
+  margin: 10px auto;
+  animation-name: musica;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-delay: 3s;
+}
+
+@keyframes musica {
+  0% {
+    color: blue;
+  }
+  25% {
+    color: red;
+    transform: skew(20deg);
+  }
+  75% {
+    color: red;
+  }
+  100% {
+    color: blue;
+  }
+}
+.contenedor {
+  display: flex;
+  justify-content: space-around;
+}
+.contenedor img {
+  height: 200px;
+  width: 200px;
+}
+
+* {
+  padding: 0%;
+  margin: 0%;
+}
+
+main {
+  background-color: black;
+}
+main h1 {
+  color: blue;
+  text-align: center;
+  font-size: 2rem;
+}
+main h2 {
+  color: blueviolet;
+}
+main .div1 p {
+  color: white;
+}
+main .div2 img {
+  height: 150px;
+  width: 50%;
+}
+
+.carousel-item {
+  height: 400px;
+  width: 300px;
+}
+
+p {
+  color: white;
+}
+
+/* footer */
+footer {
+  height: 100%;
+  background-color: yellowgreen;
+}
+footer img {
+  height: 50px;
+  width: 80px;
+}
+
+@media (min-width: 800px) {
+  .navbar {
+    font-size: 2rem;
+  }
+  main h1 {
+    font-size: 6rem;
+    color: red;
+  }
+  main h2 {
+    font-size: 4rem;
+    color: blue;
+  }
+  main .div1 p {
+    font-size: 1.5rem;
+  }
+  main .div2 img {
+    height: 400px;
+    width: 600px;
+    margin-left: 200px;
+  }
+  p {
+    font-size: 1.5rem;
+    color: white;
+  }
+  .carousel-item {
+    height: 200px;
+    width: 500px;
+  }
+  footer {
+    height: 100%;
+    background-color: yellowgreen;
+  }
+  footer img {
+    height: 100px;
+    width: 100px;
+    margin-top: 20px;
+  }
+  footer p {
+    text-align: center;
+    color: blue;
+  }
+  footer h3 {
+    color: blue;
+  }
+  footer ul li a {
+    text-decoration: none;
+  }
+}
+
+/*# sourceMappingURL=estilo.css.map */

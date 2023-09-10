@@ -1,0 +1,74 @@
+@use "variables";
+@use "colores";
+
+
+*{
+    padding: 0%;
+    margin: 0%;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+/* rock */
+
+.conteinergrid{
+    display: flex;
+    flex-direction: column;
+    .item1{
+        img{
+        height: 150px;
+        width: 150px;
+    }
+    }
+    .item2{
+        p{
+            color: orangered;
+        }
+    }
+    .item3{
+        img{
+            height: 100px;
+            width: 100px;
+        }
+    }
+}
+
+@media (min-width: 800px) {
+    .conteinergrid{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas:
+        "item1 item2 item2"
+        "item1 item3 item3"
+        "item1 item3 item3";
+    }
+    
+    .item1{
+        grid-area: item1;
+    }
+    
+    .item2{
+        grid-area: item2;
+    }
+    
+    .item3{
+        grid-area: item3;
+        height: 100%;
+    }
+    
+    .p-item2{
+        margin-left: 40px;
+        font-size: 1.5rem;
+        color: black;
+    }
+    
+    .img-item3{
+        height: 30px;
+        margin-left: 100px;
+    }
+    
+
+}

@@ -1,0 +1,48 @@
+/* mensaje */
+
+*{
+    margin: 0%;
+    padding-left: 0%;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+
+/* main */
+.animacion{
+    color: blue;
+    text-align: center;
+    margin: 10px auto;
+    animation-name: musica;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-delay: 3s;
+}
+
+@keyframes musica {
+    0%{
+        color: blue;
+    }
+    25%{
+    color: red;
+    transform: skew(20deg)
+    }
+    75%{
+    color: red;
+    }
+    100%{
+    color: blue;
+    }
+
+}
+
+.contenedor{
+    display: flex;
+    justify-content: space-around;
+    img{
+        height: 200px;
+        width: 200px;
+    }
+}
