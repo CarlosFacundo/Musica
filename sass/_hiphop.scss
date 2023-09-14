@@ -1,15 +1,32 @@
-
-
-/* hip hop */
-
-
-
-img{
-
-    height: 200px;
-    width: 100%;
+*{
+    padding: 0%;
+    margin: 0%;
 }
 
+html{
+    font-size: 62.5%;
+}
+
+
 /* main */
+.img-h{
+    height: 80px;
+    width: 100px;
+}
+
+@media (min-width: 800px) {
+    .p-hh{
+        font-size: 2rem;
+    }
+    .img-h{
+        height: 300px;
+        width: 300px;
+    }
+    .col{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
 
 

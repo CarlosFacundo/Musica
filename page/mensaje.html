@@ -7,15 +7,13 @@
 </head>
 <!-- bootstrap -->
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-
-<!-- libreria -->
-
-
+<!-- aos -->
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 <!-- css -->
 <link rel="stylesheet" href="../css/estilo.css">
 
-<body>
-    <header><header>
+<b>
+    <header>
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
             <div class="container-fluid">
             <a class="navbar-brand" href="#">Musica</a>
@@ -44,22 +42,18 @@
     <main>
         <h1 class="animacion">La musica y vos</h1>
         <p class="parrafo">la musica es muy importante en la vida de muchas personas, para relajarse y pasar un buen momento sea tomando algo solo o con amigos, bailando caminando o trabajando, nos gustaria saber cuales son tus gustos musicales vamos a estar explorando mas generos, y pronto subiremos una seccion con las ultimas canciones en salir como tambien musica retro</p>
-        <div class="contenedor">
+        <div class="contenedor" v data-aos="fade-right">
             <div class="img"><img src="https://th.bing.com/th/id/OIP._Y4K_prBtDSl5PIvXPXU5AHaKh?pid=ImgDet&rs=1" alt="MichaelJackson"></div>
-        
             <div class="img"><img src="https://images-na.ssl-images-amazon.com/images/I/C1OaF6U9TDS._SL1000_.png" alt="ElvisPresley"></div>
             <div class="img"><img src="https://i1.wp.com/thehappening.com/wp-content/uploads/2016/10/cantantes-hip-hop-3.jpg?resize=1024%2C694&ssl=1" alt="SnoopDogg3"></div>
         </div>
     </main>
     <footer>
+    <div class="m-f">
         <div>
-            <ul>
-                <h3>enlaces</h3>
-                <li><a href="./page/hiphop.html">Inicio</a></li>
-                <li><a href="../page/hiphop.html">Hip-Hop</a></li>
-                <li><a href="../page/pop.html">Pop</a></li>
-                <li><a href="../page/rock.html">Rock</a></li>
-            </ul>
+            <p class="p-de-f">dejamos una lista de los mejores temas de los 80 disfrutalas</p>
+            <iframe class="iframe" width="350" height="160" src="https://www.youtube.com/embed/VZxljP9yGqY?si=1szo3IZFhG15kxnZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
         <div>
             <form action="/my-handling-form-page" method="post">
                 <ul>
@@ -81,8 +75,16 @@
                 </ul>
             </form>
         </div>
-        </div>
-        
+    </div>
+    <div class="div-mensaje">
+        <ul>
+            <h3>enlaces</h3>
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a href="../page/hiphop.html">Hip-Hop</a></li>
+            <li><a href="../page/pop.html">Pop</a></li>
+            <li><a href="../page/rock.html">Rock</a></li>
+        </ul>
+    </div>
     </footer>
 <!-- aos -->
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
@@ -92,6 +94,6 @@ AOS.init();
     <!-- bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js" integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa" crossorigin="anonymous"></script>
-    </body>
+    
 </body>
 </html>

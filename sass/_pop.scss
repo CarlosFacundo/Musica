@@ -1,8 +1,7 @@
-/* pop */
-
 *{
     margin: 0%;
     padding: 0%;
+
 }
 
 html{
@@ -10,32 +9,62 @@ html{
     background-color: black;
 }
 
-
 /* main */
 
-.item1{
-    p{
-        color: goldenrod;
-        margin-top: 20px;
-        display: flex;
-        justify-content: center;
+.conteinergrid2{
+    display: flex;
+    flex-direction: column;
+    .item1{
+        p{
+            color: goldenrod;
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+        }
+    }
+    .item2{
+        img{
+            width: 300px;
+            height: 200px;
+        }
+    }
+    
+    .item3{
+        p{
+            margin-top: 20px;
+            color: goldenrod;
+        }
+        img{
+            height:100px;
+            width: 100px;
+        }
     }
 }
 
-.item2{
-    img{
-        width: 300px;
-        height: 200px;
+@media (min-width: 800px) {
+    .conteinergrid2{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas:
+        "item1 item1 item1"
+        "item2 item3 item3"
+        "item2 item3 item3";
     }
-}
-
-.item3{
-    p{
-        margin-top: 20px;
-        color: goldenrod;
+    .item1{
+        grid-area: item1;
+        p{
+            font-size: 2rem;
+        }
     }
-    img{
-        height: 200px;
-        width: 200px;
+    .item2{
+        grid-area: item2;
+        margin-top: 80px;
+    }
+    .item3{
+        grid-area: item3;
+        p{
+            font-size: 2rem;
+        }
     }
 }
