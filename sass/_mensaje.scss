@@ -1,4 +1,5 @@
-/* mensaje */
+@use "variables.scss";
+@use "colores.scss";
 
 *{
     margin: 0%;
@@ -17,7 +18,7 @@ html{
     margin: 10px auto;
     animation-name: musica;
     animation-duration: 4s;
-    animation-iteration-count: infinite;
+    animation-iteration-count: 2;
     animation-delay: 3s;
 }
 
@@ -67,33 +68,52 @@ footer{
 }
 
 @media (min-width: 800px) {
-    .parrafo{
-        color: white;
-        font-size: 2rem;
+    main{
+        .parrafo{
+            color: white;
+            font-size:2rem;
+            margin-top: 10px;
+            margin-left: 10px;
+        }
+        .contenedor{
+            display: flex;
+            flex-direction: row;
+            img{
+                height: 200px;
+                width: 200px;
+                border: solid red;
+            margin-left: 10px;
+            margin-left: 10px;
+        }
     }
-    .contenedor{
+    .dv{
         display: flex;
-        flex-direction: row-reverse;
-        img{
-            height: 200px;
-            width: 200px;
-        }
-    }
-    footer{
-        .m-f{
-            font-size: 1.5rem;
-        }
-        .p-de-f{ font-size: 2rem;
-        }
-        .iframe{
-            height: 200px;
-            width: 300px;
-        }
-    }
-    .div-mensaje{
-        ul{
-            margin-left: 600px;
+        justify-content: space-around;
+        div{
             margin-top: 20px;
+            p{
+                font-size: variables.$size2;
+            }
+            iframe{
+                height: 400px;
+                width: 400px;
+            }
+        }
+        div{
+            h2{
+                color: green;
+                font-size: variables.$size3;
+            }
+            form{
+                ul{
+                    list-style: none;
+                    li{
+                    font-size: variables.$size2;
+                    color: white;
+                    }
+            }
+            }
         }
     }
-}
+    }
+    }

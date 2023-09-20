@@ -84,13 +84,12 @@ html {
     font-size: 2rem;
   }
 }
-* {
-  padding: 0%;
-  margin: 0%;
-}
-
 html {
   font-size: 62.5%;
+}
+
+::-webkit-scrollbar {
+  display: none;
 }
 
 /* rock */
@@ -109,9 +108,9 @@ html {
   color: orangered;
 }
 
-@media (min-width: 800px) {
+@media (min-width: 720px) {
   .padre .item1 .p-rock {
-    font-size: 2rem;
+    font-size: 1.8rem;
   }
   .padre .item2 img {
     height: 200px;
@@ -121,7 +120,6 @@ html {
     color: red;
   }
 }
-/* mensaje */
 * {
   margin: 0%;
   padding-left: 0%;
@@ -138,7 +136,7 @@ html {
   margin: 10px auto;
   animation-name: musica;
   animation-duration: 4s;
-  animation-iteration-count: infinite;
+  animation-iteration-count: 2;
   animation-delay: 3s;
 }
 
@@ -186,43 +184,54 @@ footer .p-de-f {
 }
 
 @media (min-width: 800px) {
-  .parrafo {
+  main .parrafo {
     color: white;
     font-size: 2rem;
+    margin-top: 10px;
+    margin-left: 10px;
   }
-  .contenedor {
+  main .contenedor {
     display: flex;
-    flex-direction: row-reverse;
+    flex-direction: row;
   }
-  .contenedor img {
+  main .contenedor img {
     height: 200px;
     width: 200px;
+    border: solid red;
+    margin-left: 10px;
+    margin-left: 10px;
   }
-  footer .m-f {
-    font-size: 1.5rem;
+  main .dv {
+    display: flex;
+    justify-content: space-around;
   }
-  footer .p-de-f {
-    font-size: 2rem;
-  }
-  footer .iframe {
-    height: 200px;
-    width: 300px;
-  }
-  .div-mensaje ul {
-    margin-left: 600px;
+  main .dv div {
     margin-top: 20px;
   }
+  main .dv div p {
+    font-size: 2rem;
+  }
+  main .dv div iframe {
+    height: 400px;
+    width: 400px;
+  }
+  main .dv div h2 {
+    color: green;
+    font-size: 4rem;
+  }
+  main .dv div form ul {
+    list-style: none;
+  }
+  main .dv div form ul li {
+    font-size: 2rem;
+    color: white;
+  }
 }
-* {
-  padding: 0%;
-  margin: 0%;
-}
-
 main {
   background-color: black;
 }
 main h1 {
-  color: blue;
+  color: 2rem;
   text-align: center;
   font-size: 2rem;
 }
@@ -264,6 +273,9 @@ footer ul {
 }
 
 @media (min-width: 800px) {
+  ::-webkit-scrollbar {
+    display: none;
+  }
   .navbar {
     font-size: 2rem;
   }
@@ -272,11 +284,14 @@ footer ul {
     color: red;
   }
   main .p-a {
-    font-size: 2rem;
+    font-size: 1.8rem;
+    margin-top: 10px;
+    margin-left: 10px;
   }
   main h2 {
     font-size: 4rem;
     color: blue;
+    margin-left: 10px;
   }
   main .div2 {
     display: flex;
@@ -289,25 +304,32 @@ footer ul {
     margin-top: 40px;
   }
   .carousel-item {
-    height: 80%;
-    width: 400px;
+    height: 300px;
+    width: 300px;
     margin-top: 40px;
+    margin-left: 10px;
   }
   footer {
     height: 100%;
     background-color: yellowgreen;
   }
-  footer img {
-    height: 100px;
-    width: 100px;
-    margin-top: 20px;
+  footer div h3 {
+    color: red;
   }
-  footer h3 {
-    color: blue;
+  footer div ul {
+    display: flex;
+    justify-content: space-between;
   }
-  footer ul li a {
-    text-decoration: none;
-    font-size: 1.5rem;
+  footer div ul li a {
+    color: red;
+    font-size: 2rem;
+  }
+  footer div {
+    margin-left: 200px;
+  }
+  footer div img {
+    height: 60px;
+    width: 60px;
   }
 }
 
