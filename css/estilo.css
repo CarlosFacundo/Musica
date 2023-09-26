@@ -1,6 +1,8 @@
 /* hip-hop */
-/* main */
-.img-h {
+main .p-hh {
+  color: white;
+}
+main .img-h {
   height: 80px;
   width: 100px;
   margin-top: 10px;
@@ -41,8 +43,6 @@
 main .conteiner .item1 p {
   color: goldenrod;
   margin-top: 20px;
-  display: flex;
-  justify-content: center;
 }
 main .conteiner .item2 {
   display: flex;
@@ -90,6 +90,11 @@ main .conteiner .item3 img {
   }
 }
 /* rock */
+main .p-rock {
+  color: white;
+  margin-left: 5px;
+  margin-right: 5px;
+}
 main .garage img {
   margin-left: 150px;
   height: 100px;
@@ -98,11 +103,12 @@ main .garage img {
 main .garage p {
   color: red;
   margin-bottom: 10px;
+  margin-left: 5px;
+  margin-right: 5px;
 }
 
 @media (min-width: 720px) {
-  main .padre div .p-rock {
-    font-size: 1.5rem;
+  main .p-rock {
     color: white;
   }
   .garage {
@@ -147,6 +153,8 @@ main .animacion {
 main .parrafo {
   color: greenyellow;
   font-size: 1rem;
+  margin-left: 5px;
+  margin-right: 5px;
 }
 main .contenedor {
   display: flex;
@@ -161,6 +169,9 @@ main .contenedor img {
 }
 main .dv {
   margin-left: 30px;
+}
+main .dv p {
+  color: white;
 }
 main div h2 {
   color: blueviolet;
