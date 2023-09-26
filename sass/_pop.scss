@@ -50,7 +50,7 @@ main{
         .item1{
             grid-area: item1;
             p{
-                font-size: 2rem;
+                font-size: variables.$size1;
             }
         }
         .item2{
@@ -60,7 +60,7 @@ main{
         .item3{
         grid-area: item3;
         p{
-            font-size: 2rem;
+            font-size: variables.$size1;
         }
     }
     }

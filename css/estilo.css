@@ -10,7 +10,8 @@
 
 @media (min-width: 800px) {
   main .p-hh {
-    font-size: 2rem;
+    font-size: 1.5rem;
+    color: white;
   }
   main .img-h {
     height: 300px;
@@ -75,7 +76,7 @@ main .conteiner .item3 img {
     grid-area: item1;
   }
   .conteiner .item1 p {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
   .conteiner .item2 {
     grid-area: item2;
@@ -85,7 +86,7 @@ main .conteiner .item3 img {
     grid-area: item3;
   }
   .conteiner .item3 p {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
 }
 /* rock */
@@ -102,6 +103,7 @@ main .garage p {
 @media (min-width: 720px) {
   main .padre div .p-rock {
     font-size: 1.5rem;
+    color: white;
   }
   .garage {
     display: flex;
@@ -174,7 +176,7 @@ main div form ul li {
 @media (min-width: 720px) {
   main .parrafo {
     color: white;
-    font-size: 2rem;
+    font-size: 1.5rem;
     margin-top: 10px;
     margin-left: 10px;
   }
@@ -187,17 +189,17 @@ main div form ul li {
     width: 200px;
     border: solid red;
     margin-left: 10px;
-    margin-left: 10px;
   }
   main .dv {
     display: flex;
-    justify-content: space-around;
+    flex-direction: row;
   }
   main .dv div {
     margin-top: 20px;
   }
   main .dv div p {
     font-size: 2rem;
+    color: white;
   }
   main .dv div iframe {
     height: 400px;
@@ -206,15 +208,14 @@ main div form ul li {
   main .dv div h2 {
     color: green;
     font-size: 2rem;
-  }
-  main .dv div form {
-    margin-top: 60px;
+    margin-top: 100px;
+    margin-bottom: 80px;
   }
   main .dv div form ul {
     list-style: none;
   }
   main .dv div form ul li {
-    font-size: 1.5rem;
+    font-size: 0.8rem;
     color: white;
   }
   footer .contenedor-m {

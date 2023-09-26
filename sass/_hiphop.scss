@@ -14,7 +14,8 @@
 @media (min-width: 800px) {
     main{
         .p-hh{
-            font-size: 2rem;
+            font-size: variables.$size1;
+            color: white;
         }
         .img-h{
             height: 300px;
