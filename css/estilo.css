@@ -1,136 +1,124 @@
-* {
-  padding: 0%;
-  margin: 0%;
-}
-
-html {
-  font-size: 62.5%;
-}
-
+/* hip-hop */
 /* main */
 .img-h {
   height: 80px;
   width: 100px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 180px;
 }
 
 @media (min-width: 800px) {
-  .p-hh {
+  main .p-hh {
     font-size: 2rem;
   }
-  .img-h {
+  main .img-h {
     height: 300px;
     width: 300px;
   }
-  .col {
+  main .col.h {
     display: flex;
     flex-direction: column;
   }
+  main .col.h iframe {
+    margin-left: 400px;
+  }
+  main .display {
+    display: flex;
+    flex-direction: row;
+  }
+  main .display div {
+    margin-top: 10px;
+    margin-left: 50px;
+  }
+  main .display div img {
+    height: 200px;
+    width: 300px;
+  }
 }
-* {
-  margin: 0%;
-  padding: 0%;
-}
-
-html {
-  font-size: 62.5%;
-  background-color: black;
-}
-
-/* main */
-.conteinergrid2 {
-  display: flex;
-  flex-direction: column;
-}
-.conteinergrid2 .item1 p {
+/* pop */
+main .conteiner .item1 p {
   color: goldenrod;
   margin-top: 20px;
   display: flex;
   justify-content: center;
 }
-.conteinergrid2 .item2 img {
-  width: 300px;
-  height: 200px;
+main .conteiner .item2 {
+  display: flex;
+  justify-content: center;
 }
-.conteinergrid2 .item3 p {
+main .conteiner .item2 img {
+  width: 150px;
+  height: 150px;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+main .conteiner .item3 p {
   margin-top: 20px;
   color: goldenrod;
 }
-.conteinergrid2 .item3 img {
+main .conteiner .item3 img {
+  margin-left: 180px;
+  margin-bottom: 10px;
   height: 100px;
   width: 100px;
 }
 
-@media (min-width: 800px) {
-  .conteinergrid2 {
+@media (min-width: 720px) {
+  .conteiner {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
-    grid-template-areas: "item1 item1 item1" "item2 item3 item3" "item2 item3 item3";
+    grid-template-areas: "item1 item1 item1" "item3 item3 item2" "item3 item3 item2";
   }
-  .item1 {
+  .conteiner .item1 {
     grid-area: item1;
   }
-  .item1 p {
+  .conteiner .item1 p {
     font-size: 2rem;
   }
-  .item2 {
+  .conteiner .item2 {
     grid-area: item2;
-    margin-top: 80px;
+    margin-top: 100px;
   }
-  .item3 {
+  .conteiner .item3 {
     grid-area: item3;
   }
-  .item3 p {
+  .conteiner .item3 p {
     font-size: 2rem;
   }
 }
-html {
-  font-size: 62.5%;
-}
-
-::-webkit-scrollbar {
-  display: none;
-}
-
 /* rock */
-.padre {
-  display: flex;
-  flex-direction: column;
+main .garage img {
+  margin-left: 150px;
+  height: 100px;
+  width: 100px;
 }
-.padre .item1 p {
-  font-size: 1rem;
-}
-.padre .item2 img {
-  height: 80px;
-  width: 80px;
-}
-.padre .item3 p {
-  color: orangered;
+main .garage p {
+  color: red;
+  margin-bottom: 10px;
 }
 
 @media (min-width: 720px) {
-  .padre .item1 .p-rock {
-    font-size: 1.8rem;
+  main .padre div .p-rock {
+    font-size: 1.5rem;
   }
-  .padre .item2 img {
+  .garage {
+    display: flex;
+    justify-content: center;
+  }
+  .garage img {
     height: 200px;
-    width: 200px;
+    width: 300px;
+    margin-top: 80px;
+    margin-right: 20px;
   }
-  .padre .item3 p {
-    color: red;
+  .garage p {
+    font-size: 1.5rem;
   }
 }
-* {
-  margin: 0%;
-  padding-left: 0%;
-}
-
-html {
-  font-size: 62.5%;
-}
-
-/* main */
-.animacion {
+/* mensaje */
+main .animacion {
   color: goldenrod;
   text-align: center;
   margin: 10px auto;
@@ -139,7 +127,6 @@ html {
   animation-iteration-count: 2;
   animation-delay: 3s;
 }
-
 @keyframes musica {
   0% {
     color: goldenrod;
@@ -155,35 +142,36 @@ html {
     color: goldenrod;
   }
 }
-.parrafo {
+main .parrafo {
   color: greenyellow;
-  font-size: 1.5rem;
+  font-size: 1rem;
 }
-
-.contenedor {
+main .contenedor {
   display: flex;
   flex-direction: column;
   margin-top: 20px;
 }
-.contenedor img {
+main .contenedor img {
+  margin-left: 180px;
+  margin-top: 10px;
   height: 80px;
   width: 80px;
 }
+main .dv {
+  margin-left: 30px;
+}
+main div h2 {
+  color: blueviolet;
+}
+main div form {
+  color: white;
+  margin-bottom: 10px;
+}
+main div form ul li {
+  list-style: none;
+}
 
-footer {
-  height: 100%;
-}
-footer .m-f {
-  display: flex;
-  justify-content: space-evenly;
-}
-footer .p-de-f {
-  color: black;
-  font-size: 1rem;
-  text-align: center;
-}
-
-@media (min-width: 800px) {
+@media (min-width: 720px) {
   main .parrafo {
     color: white;
     font-size: 2rem;
@@ -217,46 +205,52 @@ footer .p-de-f {
   }
   main .dv div h2 {
     color: green;
-    font-size: 4rem;
+    font-size: 2rem;
+  }
+  main .dv div form {
+    margin-top: 60px;
   }
   main .dv div form ul {
     list-style: none;
   }
   main .dv div form ul li {
-    font-size: 2rem;
+    font-size: 1.5rem;
     color: white;
   }
+  footer .contenedor-m {
+    display: flex;
+    justify-content: space-around;
+  }
 }
+/* index */
 main {
   background-color: black;
+  width: 100%;
 }
 main h1 {
-  color: 2rem;
+  color: yellowgreen;
   text-align: center;
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 main h2 {
+  font-size: 1.5rem;
   color: blueviolet;
+  margin-left: 10px;
 }
 main .div1 p {
+  font-size: 1rem;
   color: white;
+  margin-left: 10px;
 }
 main .div2 {
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 main .div2 img {
   height: 100px;
   width: 100px;
-}
-
-.carousel-item {
-  height: 200px;
-  width: 150px;
-}
-
-p {
-  color: white;
+  margin-top: 10px;
 }
 
 /* footer */
@@ -264,50 +258,57 @@ footer {
   height: 100%;
   background-color: yellowgreen;
 }
-footer img {
+footer .col ul {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+}
+footer .col ul h3 {
+  font-size: 1rem;
+  color: red;
+}
+footer .col ul li {
+  display: flex;
+  align-items: baseline;
+}
+footer .col ul li a {
+  display: flex;
+  align-items: end;
+  font-size: 0.8rem;
+  color: red;
+}
+
+.img-f {
+  display: flex;
+  justify-content: center;
+}
+.img-f img {
   height: 40px;
   width: 50px;
 }
-footer ul {
-  list-style: none;
-}
 
-@media (min-width: 800px) {
-  ::-webkit-scrollbar {
-    display: none;
-  }
+@media (min-width: 720px) {
   .navbar {
     font-size: 2rem;
   }
   main h1 {
-    font-size: 6rem;
     color: red;
-  }
-  main .p-a {
-    font-size: 1.8rem;
-    margin-top: 10px;
-    margin-left: 10px;
+    font-size: 4rem;
   }
   main h2 {
-    font-size: 4rem;
-    color: blue;
-    margin-left: 10px;
+    font-size: 2rem;
+  }
+  main .div1 p {
+    font-size: 1.5rem;
   }
   main .div2 {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-evenly;
   }
   main .div2 img {
-    height: 200px;
-    width: 300px;
-    margin-top: 40px;
-  }
-  .carousel-item {
-    height: 300px;
-    width: 300px;
-    margin-top: 40px;
-    margin-left: 10px;
+    height: 150px;
+    width: 150px;
   }
   footer {
     height: 100%;

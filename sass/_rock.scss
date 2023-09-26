@@ -1,57 +1,43 @@
-@use "variables";
-@use "colores";
-
-
-html{
-    font-size: 62.5%;
-}
-
-::-webkit-scrollbar{
-    display: none;
-}
+@use "variables.scss";
+@use "colores.scss";
 
 /* rock */
-.padre{
-    display: flex;
-    flex-direction: column;
-    .item1{
-        p{
-            font-size: 1rem;
-        }
-    }
-    .item2{
+main{
+    .garage{
         img{
-            height: 80px;
-            width: 80px;
+            margin-left: 150px;
+            height: 100px;
+            width: 100px;
         }
-    }
-    .item3{
-    p{
-        color: orangered;
-    }
+        p{
+            color: colores.$bcg-color1;
+            margin-bottom: 10px;
+        }
     }
 }
 
 @media (min-width: 720px) {
-    .padre{
-        .item1{
-            .p-rock{
-            font-size:1.8rem;
+    main{
+        .padre{
+            div{
+                .p-rock{
+                    font-size: variables.$size1;
             }
-            }
-            
-            .item2{
-                img{
-                    height: 200px;
-                    width: 200px;
-                }
-            }
-            
-            .item3{
-                p{
-                    color: red;
-                    
-                }
-            }
+        }
     }
+}
+.garage{
+    display: flex;
+    justify-content: center;
+    img{
+        height: 200px;
+        width: 300px;
+        margin-top: 80px;
+        margin-right: 20px;
+        
+    }
+    p{
+        font-size: variables.$size1;
+    }
+}
     }

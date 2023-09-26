@@ -1,73 +1,72 @@
 @use "variables.scss";
 @use "colores.scss";
 
-*{
-    margin: 0%;
-    padding-left: 0%;
-}
-
-html{
-    font-size: 62.5%;
-}
-
-
-/* main */
-.animacion{
-    color: goldenrod;
-    text-align: center;
-    margin: 10px auto;
-    animation-name: musica;
-    animation-duration: 4s;
-    animation-iteration-count: 2;
-    animation-delay: 3s;
-}
-
-@keyframes musica {
-    0%{
+/* mensaje */
+main{
+    .animacion{
         color: goldenrod;
-    }
-    25%{
-    color: red;
-    transform: skew(20deg)
-    }
-    75%{
-    color: red;
-    }
-    100%{
-    color: goldenrod;
-    }
-
-}
-
-.parrafo{
-    color: greenyellow;
-    font-size: 1.5rem;
-}
-
-.contenedor{
-    display: flex;
-    flex-direction: column;
-    margin-top: 20px;
-    img{
-        height: 80px;
-        width: 80px;
-    }
-}
-
-footer{
-    height: 100%;
-    .m-f{
-        display: flex;
-        justify-content: space-evenly;
-    }
-    .p-de-f{
-        color: black;
-        font-size: 1rem;
         text-align: center;
+        margin: 10px auto;
+        animation-name: musica;
+        animation-duration: 4s;
+        animation-iteration-count: 2;
+        animation-delay: 3s;
+    }
+    
+    @keyframes musica {
+        0%{
+            color: goldenrod;
+        }
+        25%{
+        color: colores.$bcg-color1;
+        transform: skew(20deg)
+        }
+        75%{
+        color: colores.$bcg-color1
+        }
+        100%{
+        color: goldenrod;
+        }
+    
+    }
+    
+    .parrafo{
+        color: colores.$bcg-color5;
+        font-size: 1rem;
+    }
+
+    .contenedor{
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px;
+        img{
+            margin-left: 180px;
+            margin-top: 10px;
+            height: 80px;
+            width: 80px;
+        }
+    }
+    .dv{
+        margin-left: 30px;
+    }
+    div{
+        h2{
+        color: colores.$bcg-color3;
+        }
+        form{
+            color: white;
+            margin-bottom: 10px;
+            ul{
+                li{
+                    list-style: none;
+                }
+            }
+        }
     }
 }
 
-@media (min-width: 800px) {
+
+@media (min-width: 720px) {
     main{
         .parrafo{
             color: white;
@@ -81,7 +80,7 @@ footer{
             img{
                 height: 200px;
                 width: 200px;
-                border: solid red;
+                border: solid colores.$bcg-color1;
             margin-left: 10px;
             margin-left: 10px;
         }
@@ -102,13 +101,14 @@ footer{
         div{
             h2{
                 color: green;
-                font-size: variables.$size3;
+                font-size: variables.$size2;
             }
             form{
+                margin-top: 60px;
                 ul{
                     list-style: none;
                     li{
-                    font-size: variables.$size2;
+                    font-size: variables.$size1;
                     color: white;
                     }
             }
@@ -116,4 +116,10 @@ footer{
         }
     }
     }
+    footer{
+    .contenedor-m{
+        display: flex;
+        justify-content: space-around;
     }
+    }
+        }

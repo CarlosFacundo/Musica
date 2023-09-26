@@ -5,119 +5,130 @@
 @use "rock.scss";
 @use "mensaje.scss";
 
+/* index */
+
     main{
     background-color: black;
+    width: 100%;
     h1{
-        color: variables.$size2;
+        color: yellowgreen;
         text-align: center;
-        font-size: variables.$size2;
+        font-size: variables.$size1;
     }
     h2{
+        font-size: variables.$size1;
         color: blueviolet;
+        margin-left: 10px;
     }
     .div1{
         p{
+        font-size: 1rem;
         color: white;
+        margin-left: 10px;
         }
     }
     .div2{
         display: flex;
         flex-direction: column;
+        align-items: center;
         img{
             height: 100px;
             width: 100px;
+            margin-top: 10px;
         }
     }
     
 }
-.carousel-item{
-height: 200px;
-    width: 150px;
-}
-p{
-    color: white;
-}
+
 /* footer */
 
 footer {
     height: 100%;
     background-color: yellowgreen;
-    img{
-        height: 40px;
-        width: 50px;
-    }
-    ul{
-        list-style: none;
-    }
-}
+        .col{
+            ul{
+                display: flex;
+                justify-content: space-between;
+                list-style: none;
+                h3{
+                    font-size: 1rem;
+                    color: red;
+                }
+            li{
+                display: flex;
+                align-items: baseline;
+                a{
+                display: flex;
+                align-items: end;
+                font-size: 0.8rem;
+                color: red;
+                }
+                }
+            }
+            }
+        }
+        .img-f{
+            display: flex;
+            justify-content: center;
+            img{
+                height: 40px;
+                width: 50px;
+            }
+        }
 
-
-@media (min-width: 800px){
-    ::-webkit-scrollbar{
-        display: none;
-    }
+@media (min-width: 720px){
     .navbar{
         font-size: variables.$size2;
     }
+
     main{
         h1{
-            font-size: variables.$size4;
             color: colores.$bcg-color1;
-        }
-        .p-a{
-            font-size: variables.$size6;
-            margin-top: 10px;
-            margin-left: 10px;
+            font-size: variables.$size3;
         }
         h2{
-            font-size: variables.$size3;
-            color: colores.$bcg-color2;
-            margin-left: 10px;
+            font-size: variables.$size2;
+        }
+        .div1{
+        p{
+            font-size: variables.$size1;
+        }
         }
         .div2{
-            display: flex;
-            flex-direction: row;
-            justify-content: space-around;
-            img{
-                height: 200px;
-                width:300px;
-                margin-top: 40px;
-            }
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        img{
+            height: 150px;
+            width: 150px;
         }
-}
-
-.carousel-item{
-    height: 300px;
-    width: 300px;
-    margin-top: 40px;
-    margin-left: 10px;
-}
-
-footer{
-    height: 100%;
-    background-color: yellowgreen;
-    div{
-        h3{
-            color: red;
-            }
-            ul{ 
-                display: flex;
-                justify-content: space-between;
-                
-                li{
-                    a{
-                        color: red;
-                    font-size: variables.$size2;
+        }
+    }
+    footer{
+        height: 100%;
+        background-color: yellowgreen;
+        div{
+            h3{
+                color:  colores.$bcg-color1;
+                }
+                ul{ 
+                    display: flex;
+                    justify-content: space-between;
+                    
+                    li{
+                        a{
+                            color: colores.$bcg-color1;
+                            font-size: variables.$size2;
+                        }
                     }
                 }
+        }
+        div{
+            margin-left: 200px;
+            img{
+                height: 60px;
+                width: 60px;
             }
-    }
-    div{
-        margin-left: 200px;
-        img{
-            height: 60px;
-            width: 60px;
         }
     }
-}
-}
+        }
